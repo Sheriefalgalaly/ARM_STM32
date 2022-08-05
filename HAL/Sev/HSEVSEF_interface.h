@@ -21,6 +21,6 @@ void HSevSeg_voidSetNum(SevSeg_t* Sev,u8 Num);
 void HSevSeg_voidSetTwoNum(SevSeg_t* Sev1,SevSeg_t* Sev2,u8 Num);
 
 void HSevSeg_voidClear(SevSeg_t* Sev);
-
+void HSevSeg_voidDisable(SevSeg_t* Sev);
 
 #endif /* HSEVSEF_INTERFACE_H_ */
