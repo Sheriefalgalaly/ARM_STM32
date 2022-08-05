@@ -41,8 +41,8 @@
 #define M_PORTA_12    GPoutMode
 #define M_PORTA_15    GPoutMode
 /*PORT A Mode */
-#define T_PORTA_0     OUT_PUSHPULL
-#define T_PORTA_1     OUT_PUSHPULL
+#define T_PORTA_0     OUT_OPENDRAIN
+#define T_PORTA_1     OUT_OPENDRAIN
 #define T_PORTA_2     OUT_PUSHPULL
 #define T_PORTA_3     OUT_PUSHPULL
 #define T_PORTA_4     OUT_PUSHPULL
@@ -74,10 +74,10 @@
 /* PORT A pullup-down */
 #define P_PORTA_0       NOPullup_down
 #define P_PORTA_1       NOPullup_down
-#define P_PORTA_2       Pull_down
+#define P_PORTA_2       Pull_up
 #define P_PORTA_3       NOPullup_down
 #define P_PORTA_4       NOPullup_down
-#define P_PORTA_5       Pull_down
+#define P_PORTA_5       Pull_up
 #define P_PORTA_6       NOPullup_down
 #define P_PORTA_7       NOPullup_down
 #define P_PORTA_8       NOPullup_down
@@ -121,7 +121,7 @@
 #define T_PORTB_12    OUT_PUSHPULL
 #define T_PORTB_13    OUT_PUSHPULL
 #define T_PORTB_14    OUT_PUSHPULL
-#define T_PORTB_15    OUT_PUSHPULL
+#define T_PORTB_15    OUT_OPENDRAIN
 /* Speed */
 #define S_PORTB_0       Medium_S
 #define S_PORTB_1       Medium_S
@@ -151,27 +151,27 @@
 #define P_PORTB_9       NOPullup_down
 #define P_PORTB_10      NOPullup_down
 #define P_PORTB_12      NOPullup_down
-#define P_PORTB_13      Pull_down
+#define P_PORTB_13      Pull_up
 #define P_PORTB_14      NOPullup_down
 #define P_PORTB_15      NOPullup_down
 
 /**********************  PORT C ********************/
 
-#define M_PORTC_13    Input
+#define M_PORTC_13    GPoutMode
 #define M_PORTC_14    GPoutMode
 #define M_PORTC_15    GPoutMode
 /* */
 #define T_PORTC_13    OUT_PUSHPULL
 #define T_PORTC_14    OUT_PUSHPULL
-#define T_PORTC_15    OUT_PUSHPULL
+#define T_PORTC_15    OUT_OPENDRAIN
 /* */
 #define S_PORTC_13      Medium_S
 #define S_PORTC_14      Medium_S
 #define S_PORTC_15      Medium_S
 /* */
-#define P_PORTC_13      Pull_down
+#define P_PORTC_13      NOPullup_down
 #define P_PORTC_14      NOPullup_down
-#define P_PORTC_15      NOPullup_down
+#define P_PORTC_15      OUT_OPENDRAIN
 
 
 
